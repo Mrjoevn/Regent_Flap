@@ -1,0 +1,15 @@
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\bin\Debug\FLap_New.exe
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\bin\Debug\FLap_New.pdb
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.AssemblyReference.cache
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.Properties.Resources.resources
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.GenerateResource.cache
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.CoreCompileInputs.cache
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.exe
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.pdb
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.frmIndex.resources
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmInterface.resources
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\bin\Debug\FLap_New.exe.config
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\bin\Debug\MetroFramework.dll
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmFabricInMes.resources
+C:\Users\rglmduy\Programm\LaptrinhC#\C#Basic\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.Up2Date
