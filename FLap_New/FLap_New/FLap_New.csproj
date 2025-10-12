@@ -56,6 +56,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SubForm\frmFabricInCics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\frmFabricInCics.Designer.cs">
+      <DependentUpon>frmFabricInCics.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForm\frmFabricInMes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\frmFabricInCics.resx">
+      <DependentUpon>frmFabricInCics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\frmFabricInMes.resx">
       <DependentUpon>frmFabricInMes.cs</DependentUpon>
@@ -104,6 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\mainImg.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\date_icon2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

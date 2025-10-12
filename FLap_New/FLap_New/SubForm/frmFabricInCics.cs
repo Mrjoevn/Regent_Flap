@@ -3,40 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace FLap_New.SubForm
 {
-    public partial class frmFabricInMes : Form
+    public partial class frmFabricInCics : Form
     {
-        public frmFabricInMes()
+        public frmFabricInCics()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void frmFabricInMes_Load(object sender, EventArgs e)
-        {
-            SetupWatermark(txtDateStart);
-            SetupWatermark(txtDateEnd);
-            //string userInput = (textBox1.Text == watermarkText && textBox1.ForeColor == Color.Gray) ? "" : textBox1.Text;
-            //check Date value condition if value is what we define will skip it
-        }
-        private void pcbStartDate_Click(object sender, EventArgs e)
-        {
-            txtDateStart.Focus();
-            ShowCalendar(txtDateStart,pcbStartDate);
         }
         #region StartDate
         private ToolStripDropDown dropDown;
         private MonthCalendar monthCalendar;
-        private void ShowCalendar(TextBox targetTextBox,PictureBox picture)
+        private void ShowCalendar(TextBox targetTextBox, PictureBox picture)
         {
             // Nếu popup đang mở thì đóng lại
             if (dropDown != null && dropDown.Visible)
@@ -72,6 +55,12 @@ namespace FLap_New.SubForm
             dropDown.Show(location);
         }
         #endregion StartDate
+
+        private void pcbCicsDate_Click(object sender, EventArgs e)
+        {
+            txtCiscDate.Focus();
+            ShowCalendar(txtCiscDate, pcbCicsDate);
+        }
         #region WaterMark
         private string watermarkText = "dd-mm-yyyy";
         private void SetupWatermark(TextBox textBox)
@@ -108,15 +97,10 @@ namespace FLap_New.SubForm
             };
         }
         #endregion WaterMark
-        private void pcbEndDate_Click(object sender, EventArgs e)
-        {
-            txtDateEnd.Focus();
-            ShowCalendar(txtDateEnd, pcbEndDate);
-        }
 
-        private void btnMesSearch_Click(object sender, EventArgs e)
+        private void frmFabricInCics_Load(object sender, EventArgs e)
         {
-              
+            SetupWatermark(txtCiscDate);
         }
     }
 }

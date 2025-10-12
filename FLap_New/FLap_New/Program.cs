@@ -15,8 +15,8 @@ namespace FLap_New
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmIndex());
-            Application.Run(new frmFabricInMes());
+            Application.Run(new frmIndex());
+            //Application.Run(new frmFabricInCics());
         }
     }
 }
