@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using FLap_New.Object;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace FLap_New.SubForm
@@ -116,7 +118,30 @@ namespace FLap_New.SubForm
 
         private void btnMesSearch_Click(object sender, EventArgs e)
         {
-              
+            //// 🔑 Ma trận khóa 4x4 (phải khả nghịch mod 26)
+            ////Console.Write("Nhập chuỗi cần mã hóa (A–Z): ");
+            //string plaintext = "study123";
+            //HillCipher4x4 hill_Encryption = new HillCipher4x4();
+            //string ciphertext = hill_Encryption.Encrypt(plaintext.ToUpper());
+            //txtMesSo.Text = "Ciphertext: " + ciphertext;
+            //string decrypted = hill_Encryption.Decrypt(ciphertext);
+            //txtMesBatch.Text = "Decrypted: " + decrypted;
+            ConnectionToSql conn = new ConnectionToSql("CicsConnectionString");
+            Console.WriteLine(conn.GetRawConnectionString());
         }
+        //public DataTable GetData()
+        //{
+        //    using (SqlConnection sqlcon = new SqlConnection(connection))
+        //    {
+        //        sqlcon.Open();
+        //        SqlCommand cmd = new SqlCommand(" set nocount on exec RP_checkfabricinfo '" + txtdate.Text + "','" + sotxt.Text + "','" + batchtxt.Text + "','" + trolleytxt.Text + "','" + txtroll.Text + "'", sqlcon);
+        //        SqlDataAdapter sqlda = new SqlDataAdapter(cmd);
+        //        cmd.CommandType = CommandType.StoredProcedure;
+        //        DataTable dttb = new DataTable();
+        //        sqlda.Fill(dttb);
+        //        dtviewMES.DataSource = dttb;
+        //        return dttb;
+        //    }
+        //}
     }
 }

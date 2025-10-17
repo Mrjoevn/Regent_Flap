@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using FLap_New.SubForm;
+using FLap_New.Object;
 
 namespace FLap_New
 {

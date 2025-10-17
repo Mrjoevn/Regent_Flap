@@ -27,3 +27,16 @@ C:\Users\Admin\Documents\Flap Project\FLap_New\FLap_New\bin\Debug\FLap_New.exe.c
 C:\Users\Admin\Documents\Flap Project\FLap_New\FLap_New\bin\Debug\FLap_New.exe
 C:\Users\Admin\Documents\Flap Project\FLap_New\FLap_New\bin\Debug\FLap_New.pdb
 C:\Users\Admin\Documents\Flap Project\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmFabricInCics.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\bin\Debug\FLap_New.exe.config
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\bin\Debug\FLap_New.exe
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\bin\Debug\FLap_New.pdb
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.AssemblyReference.cache
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.frmIndex.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.Properties.Resources.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmFabricInCics.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmFabricInMes.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmInterface.resources
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.GenerateResource.cache
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.csproj.CoreCompileInputs.cache
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.exe
+C:\Users\rglmduy\Downloads\FLap_New\FLap_New\obj\Debug\FLap_New.pdb
