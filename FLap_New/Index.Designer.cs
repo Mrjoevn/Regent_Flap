@@ -35,11 +35,6 @@
             this.pnMenuBar2 = new System.Windows.Forms.Panel();
             this.pnMenuBar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnNavigation = new System.Windows.Forms.Panel();
-            this.pcbExit = new System.Windows.Forms.PictureBox();
-            this.pcbDashboard = new System.Windows.Forms.PictureBox();
-            this.pcbReport = new System.Windows.Forms.PictureBox();
-            this.pcbVap = new System.Windows.Forms.PictureBox();
-            this.pcbCutting = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pnReportSubnav = new System.Windows.Forms.Panel();
@@ -65,19 +60,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pcbExit = new System.Windows.Forms.PictureBox();
+            this.pcbDashboard = new System.Windows.Forms.PictureBox();
+            this.pcbReport = new System.Windows.Forms.PictureBox();
+            this.pcbVap = new System.Windows.Forms.PictureBox();
+            this.pcbCutting = new System.Windows.Forms.PictureBox();
             this.pnMain.SuspendLayout();
             this.pnMainContent.SuspendLayout();
             this.pnMenuBar2.SuspendLayout();
             this.pnNavigation.SuspendLayout();
+            this.pnReportSubnav.SuspendLayout();
+            this.pnVapSubnav.SuspendLayout();
+            this.pnCctSubnav.SuspendLayout();
+            this.pnLogoHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbVap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCutting)).BeginInit();
-            this.pnReportSubnav.SuspendLayout();
-            this.pnVapSubnav.SuspendLayout();
-            this.pnCctSubnav.SuspendLayout();
-            this.pnLogoHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMain
@@ -154,56 +154,6 @@
             this.pnNavigation.Name = "pnNavigation";
             this.pnNavigation.Size = new System.Drawing.Size(251, 936);
             this.pnNavigation.TabIndex = 0;
-            // 
-            // pcbExit
-            // 
-            this.pcbExit.Image = ((System.Drawing.Image)(resources.GetObject("pcbExit.Image")));
-            this.pcbExit.Location = new System.Drawing.Point(10, 1118);
-            this.pcbExit.Name = "pcbExit";
-            this.pcbExit.Size = new System.Drawing.Size(32, 32);
-            this.pcbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbExit.TabIndex = 12;
-            this.pcbExit.TabStop = false;
-            // 
-            // pcbDashboard
-            // 
-            this.pcbDashboard.Image = ((System.Drawing.Image)(resources.GetObject("pcbDashboard.Image")));
-            this.pcbDashboard.Location = new System.Drawing.Point(9, 1058);
-            this.pcbDashboard.Name = "pcbDashboard";
-            this.pcbDashboard.Size = new System.Drawing.Size(32, 32);
-            this.pcbDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbDashboard.TabIndex = 11;
-            this.pcbDashboard.TabStop = false;
-            // 
-            // pcbReport
-            // 
-            this.pcbReport.Image = ((System.Drawing.Image)(resources.GetObject("pcbReport.Image")));
-            this.pcbReport.Location = new System.Drawing.Point(7, 782);
-            this.pcbReport.Name = "pcbReport";
-            this.pcbReport.Size = new System.Drawing.Size(32, 32);
-            this.pcbReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbReport.TabIndex = 10;
-            this.pcbReport.TabStop = false;
-            // 
-            // pcbVap
-            // 
-            this.pcbVap.Image = ((System.Drawing.Image)(resources.GetObject("pcbVap.Image")));
-            this.pcbVap.Location = new System.Drawing.Point(11, 509);
-            this.pcbVap.Name = "pcbVap";
-            this.pcbVap.Size = new System.Drawing.Size(32, 32);
-            this.pcbVap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbVap.TabIndex = 9;
-            this.pcbVap.TabStop = false;
-            // 
-            // pcbCutting
-            // 
-            this.pcbCutting.Image = ((System.Drawing.Image)(resources.GetObject("pcbCutting.Image")));
-            this.pcbCutting.Location = new System.Drawing.Point(9, 185);
-            this.pcbCutting.Name = "pcbCutting";
-            this.pcbCutting.Size = new System.Drawing.Size(32, 32);
-            this.pcbCutting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbCutting.TabIndex = 3;
-            this.pcbCutting.TabStop = false;
             // 
             // btnExit
             // 
@@ -503,6 +453,7 @@
             this.bnCutting_Cct.Text = "Thông tin Bàn Cắt (Cut Record)";
             this.bnCutting_Cct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bnCutting_Cct.UseVisualStyleBackColor = true;
+            this.bnCutting_Cct.Click += new System.EventHandler(this.bnCutting_Cct_Click);
             // 
             // btnCutting_Cics
             // 
@@ -602,6 +553,56 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "FLAP";
             // 
+            // pcbExit
+            // 
+            this.pcbExit.Image = ((System.Drawing.Image)(resources.GetObject("pcbExit.Image")));
+            this.pcbExit.Location = new System.Drawing.Point(10, 1118);
+            this.pcbExit.Name = "pcbExit";
+            this.pcbExit.Size = new System.Drawing.Size(32, 32);
+            this.pcbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbExit.TabIndex = 12;
+            this.pcbExit.TabStop = false;
+            // 
+            // pcbDashboard
+            // 
+            this.pcbDashboard.Image = ((System.Drawing.Image)(resources.GetObject("pcbDashboard.Image")));
+            this.pcbDashboard.Location = new System.Drawing.Point(9, 1058);
+            this.pcbDashboard.Name = "pcbDashboard";
+            this.pcbDashboard.Size = new System.Drawing.Size(32, 32);
+            this.pcbDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbDashboard.TabIndex = 11;
+            this.pcbDashboard.TabStop = false;
+            // 
+            // pcbReport
+            // 
+            this.pcbReport.Image = ((System.Drawing.Image)(resources.GetObject("pcbReport.Image")));
+            this.pcbReport.Location = new System.Drawing.Point(7, 782);
+            this.pcbReport.Name = "pcbReport";
+            this.pcbReport.Size = new System.Drawing.Size(32, 32);
+            this.pcbReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbReport.TabIndex = 10;
+            this.pcbReport.TabStop = false;
+            // 
+            // pcbVap
+            // 
+            this.pcbVap.Image = ((System.Drawing.Image)(resources.GetObject("pcbVap.Image")));
+            this.pcbVap.Location = new System.Drawing.Point(11, 509);
+            this.pcbVap.Name = "pcbVap";
+            this.pcbVap.Size = new System.Drawing.Size(32, 32);
+            this.pcbVap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbVap.TabIndex = 9;
+            this.pcbVap.TabStop = false;
+            // 
+            // pcbCutting
+            // 
+            this.pcbCutting.Image = ((System.Drawing.Image)(resources.GetObject("pcbCutting.Image")));
+            this.pcbCutting.Location = new System.Drawing.Point(9, 185);
+            this.pcbCutting.Name = "pcbCutting";
+            this.pcbCutting.Size = new System.Drawing.Size(32, 32);
+            this.pcbCutting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbCutting.TabIndex = 3;
+            this.pcbCutting.TabStop = false;
+            // 
             // frmIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -621,16 +622,16 @@
             this.pnMainContent.ResumeLayout(false);
             this.pnMenuBar2.ResumeLayout(false);
             this.pnNavigation.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbVap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCutting)).EndInit();
             this.pnReportSubnav.ResumeLayout(false);
             this.pnVapSubnav.ResumeLayout(false);
             this.pnCctSubnav.ResumeLayout(false);
             this.pnLogoHeader.ResumeLayout(false);
             this.pnLogoHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDashboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbVap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCutting)).EndInit();
             this.ResumeLayout(false);
 
         }

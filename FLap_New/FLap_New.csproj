@@ -44,10 +44,17 @@
     <Reference Include="EPPlus.System.Drawing, Version=7.5.0.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.System.Drawing.7.5.0\lib\net462\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf, Version=3.29.3.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.29.3\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -79,6 +86,7 @@
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Index.cs">
@@ -96,24 +104,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SubForm\frmFabricInCics.cs">
+    <Compile Include="CCT_SubForm\frmCuttingRecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForm\frmFabricInCics.Designer.cs">
+    <Compile Include="CCT_SubForm\frmCuttingRecord.Designer.cs">
+      <DependentUpon>frmCuttingRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCT_SubForm\frmFabricInCics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCT_SubForm\frmFabricInCics.Designer.cs">
       <DependentUpon>frmFabricInCics.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForm\frmFabricInMes.cs">
+    <Compile Include="CCT_SubForm\frmFabricInMes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForm\frmFabricInMes.Designer.cs">
+    <Compile Include="CCT_SubForm\frmFabricInMes.Designer.cs">
       <DependentUpon>frmFabricInMes.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForm\Interface.cs">
+    <Compile Include="CCT_SubForm\Interface.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForm\Interface.Designer.cs">
+    <Compile Include="CCT_SubForm\Interface.Designer.cs">
       <DependentUpon>Interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="CCT_SubForm\Mes_ChildForm\Constants.cs" />
+    <Compile Include="CCT_SubForm\Mes_ChildForm\FabricInfoDTO.cs" />
+    <Compile Include="CCT_SubForm\Mes_ChildForm\FormQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCT_SubForm\Mes_ChildForm\FormQR.Designer.cs">
+      <DependentUpon>FormQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCT_SubForm\Mes_ChildForm\FormQRChildrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCT_SubForm\Mes_ChildForm\FormQRChildrent.Designer.cs">
+      <DependentUpon>FormQRChildrent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CCT_SubForm\frmCuttingRecord.resx">
+      <DependentUpon>frmCuttingRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,14 +153,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForm\frmFabricInCics.resx">
+    <EmbeddedResource Include="CCT_SubForm\frmFabricInCics.resx">
       <DependentUpon>frmFabricInCics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForm\frmFabricInMes.resx">
+    <EmbeddedResource Include="CCT_SubForm\frmFabricInMes.resx">
       <DependentUpon>frmFabricInMes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForm\Interface.resx">
+    <EmbeddedResource Include="CCT_SubForm\Interface.resx">
       <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCT_SubForm\Mes_ChildForm\FormQR.resx">
+      <DependentUpon>FormQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCT_SubForm\Mes_ChildForm\FormQRChildrent.resx">
+      <DependentUpon>FormQRChildrent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -158,8 +195,6 @@
   <ItemGroup>
     <Content Include="img\date_icon2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SubForm\Mes_ChildForm\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

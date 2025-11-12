@@ -211,5 +211,11 @@ namespace FLap_New
             frmFabricInCics frmCctCics = new frmFabricInCics();
             showInterface(frmCctCics,"CICS");
         }
+
+        private void bnCutting_Cct_Click(object sender, EventArgs e)
+        {
+            frmCuttingRecord frmCctCut = new frmCuttingRecord();
+            showInterface(frmCctCut, "CutRecord");
+        }
     }
 }

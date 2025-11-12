@@ -75,3 +75,10 @@ C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\b
 C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\System.Drawing.Common.dll
 C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\System.Drawing.Common.pdb
 C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\System.Drawing.Common.xml
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\Google.Protobuf.dll
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\QRCoder.dll
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\Google.Protobuf.pdb
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\bin\Debug\Google.Protobuf.xml
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.Mes_ChildForm.FormQR.resources
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.Mes_ChildForm.FormQRChildrent.resources
+C:\Users\rglmduy\Downloads\Regent_Flap-main\Regent_Flap-main\FLap_New\FLap_New\obj\Debug\FLap_New.SubForm.frmCuttingRecord.resources
