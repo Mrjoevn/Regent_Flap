@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using FLap_New.SubForm;
+using FLap_New.Object;
+
+namespace FLap_New
+{
+    internal static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new frmIndex());
+            //Application.Run(new frmFabricInCics());
+            //HillCipher4x4 text = new HillCipher4x4();
+            //string encrypt = text.Encrypt("STUDY234");
+            //Console.WriteLine(encrypt);
+        }
+    }
+}
